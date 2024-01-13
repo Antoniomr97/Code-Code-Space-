@@ -17,7 +17,6 @@
         header {
             background-color: #343a40;
             padding: 1em;
-            max-width: 100%;
         }
         ul {
             font-family: "Source Sans Pro", sans-serif;
@@ -139,14 +138,22 @@
             padding: 0.8em;
             text-align: center;
             color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
+        nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        
     </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a class="active" href="#"></a>Home</li>
+                <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Contact</a></li>
                 <li style="float: right;">
