@@ -18,12 +18,18 @@
             background-color: #343a40;
             padding: 1em;
         }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
         ul {
             font-family: "Source Sans Pro", sans-serif;
-            padding: 1.5em;
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex;
+            align-items: center;
         }
         li {
             font-weight: bold;
@@ -31,13 +37,21 @@
             text-transform: uppercase;
             float: left;
         }
+        form {
+            display: flex;
+            align-items: center;
+        }
+        .header-container form{
+            margin-left: auto;
+        }
         a,
         input,
         button {
             color: rgba(255, 255, 255, 0.9);
             font-size: 0.9em;
-            display: inline-block;
+            /*display: inline-block;*/
             padding: 1em 1.2em;
+            text-decoration: none;
         }
         .active,
         button {
@@ -92,7 +106,7 @@
         .author {
             padding-left: 0.7em;
         }
-        .two-colums {
+        .two-columns {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -121,18 +135,25 @@
             width: 30%;
             background-color: #f9f9fb;
             padding: 0.5em;
+            display: flex;
+            flex-direction: column;
         }
-        aside h2 {
-            padding-left: 1em;
-            padding-top: 0.8em;
+        .header-container + main {
+            display: flex;
+            justify-content: space-between;
         }
+        
         aside ul {
-            padding: 2em 1em;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
         }
         aside li {
-            display: block;
-            width: 100%;
+            margin-bottom: 0.5em;
         }
+        
+        
         footer {
             background-color: #1e242a;
             padding: 0.8em;
@@ -146,23 +167,25 @@
             display: flex;
             justify-content: space-between;
         }
-        
+        form {
+            display: flex;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="header-container">
             <ul>
                 <li><a class="active" href="#">Home</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Contact</a></li>
-                <li style="float: right;">
-                    <form>
-                        <input type="text" placeholder="Search">
-                        <button type="submit">Search</button>
-                    </form>
-                </li>
             </ul>
+            <form>
+                <input type="text" placeholder="Search">
+                <button type="submit">Search</button>
+            </form>
+            
         </nav>
     </header>
     <main>
@@ -173,7 +196,7 @@
             </p>
             <button>Learn more &raquo;</button>
         </div>
-        <div class="two-colums">
+        <div class="two-columns">
             <section>
                 <article>
                     <h2>Sample blog post</h2>
