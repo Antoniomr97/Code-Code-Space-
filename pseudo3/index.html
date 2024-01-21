@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo3</title>
+    <style>
+        * {
+            font-size: 0.783rem;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #d63384;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #198754;
+            --teal: #20c997;
+            --cyan: #0dcaf0;
+            --dark: #292a2b;
+        }
+        blockquote {
+            width: 60%;
+            max-width: 625px;
+            margin: 5% auto;
+            line-height: 160%;
+            background-color: var(--dark);
+            padding: 2em 3em;
+            border-radius: .3rem;
+            text-indent: 5%;
+            font-family: "Rubik", sans-serif;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        blockquote:before{
+            content: open-quote;
+            margin-top: .1em;
+            margin-left: -.6em;
+            position: absolute;
+            color: var(--red);
+        }
+        blockquote:after {
+            content: close-quote;
+            margin-top: .3em;
+            margin-left: .015em;
+            position: absolute;
+            color: var(--red);
+        }
+        blockquote::before,
+        blockquote::after {
+            font-size: 8.5rem;
+            font-family: "Fredoka", sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio tempora delectus, amet, ipsum voluptatem nostrum consequuntur expedita aliquid doloremque praesentium minima, voluptate accusantium mollitia nobis animi placeat ea ullam laboriosam quas. Reprehenderit nihil ipsam voluptates est, temporibus nesciunt excepturi nam minus dolores qui illum saepe hic ex nostrum sit commodi molestiae enim, amet ut earum cumque dicta numquam. Laborum et deserunt optio officiis consectetur reiciendis est, impedit veniam velit quia exercitationem quos veritatis fugit nulla, quod qui cumque. Blanditiis repudiandae enim in esse ea, aspernatur libero nulla sit tempore neque beatae odit cupiditate laborum necessitatibus sed. Amet libero modi assumenda.
+    </blockquote>
+</body>
+</html>

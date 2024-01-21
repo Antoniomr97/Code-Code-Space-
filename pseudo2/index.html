@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo2</title>
+    <style>
+        * {
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #198754;
+            --teal: #20c997;
+            --cyan: #0dcaf0;
+            --dark: #292a2b;
+        }
+        div {
+            font-family: "Fredoka", sans-serif;
+            background-color: var(dark);
+        }
+        p {
+            max-width: 70%;
+            margin: 2% auto;
+            font-family: "Rubik", sans-serif;
+            font-size: 1.5rem;
+            padding: 0.5em 0.8em;
+            border-radius: 0.3rem;
+            transition: all 0.2s ease-in-out 0.1s;
+        }
+        p:first-of-type::first-letter {
+            font-size: 5em;
+            float: left;
+            padding-right: 0.3em;
+            color: var(--yellow);
+            font-family: "Fredoka", sans-serif;
+        }
+        p:first-of-type::first-line {
+            font-weight: bold;
+        }
+        p:first-of-type {
+            background-color: var(--green);
+        }
+        p:nth-child(even) {
+            background-color: var(--cyan);
+        }
+        p:nth-child(odd):not(:first-of-type) {
+            background-color: var(--orange);
+        }
+        p:hover {
+            font-size: 1.8rem !important;
+            background-color: var(--red) !important;
+            transform: rotate(-5deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa porro fugit sunt veritatis totam laudantium, cupiditate repellat iure eveniet.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor voluptatibus consequuntur natus ad quae, et quisquam error modi. Quos.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor voluptatibus consequuntur natus ad quae, et quisquam error modi. Quos.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt dolor voluptatibus consequuntur natus ad quae, et quisquam error modi. Quos.</p>
+    </div>
+</body>
+</html>
