@@ -1,0 +1,74 @@
+:root {
+    font-size: 0.875rem;
+    font-family: "Rubik", sans-serif;
+    --blue: #0d6efd;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #d63384;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #198754;
+    --teal: #20c997;
+    --cyan: #0dcaf0;
+    --dark: #292a2b;
+}
+*::before, ::after{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: inherit;
+}
+body{
+    background-color: black;
+}
+div.card {
+    width: 30%;
+    border: 3px solid #68214D;
+    border-radius: 0.3rem;
+    background-color: #222;
+     
+}
+div:not(.card){
+    padding: .8rem;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
+h2 {
+    color: #fff;
+    line-height: 15%;
+}
+h3 {
+    color: #7d8687;
+    font-size: .95rem;
+}
+p {
+    color: #c8cdd8;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.15em;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    padding: .8em .6em;
+    font-size: 1.2em;
+    background-color: transparent;
+    border: 5px solid #FF512F;
+    border-image: linear-gradient(to right, #FF512F, #C8246D) 1;
+    color: #ee3a52;
+    border-radius: 0.8em;
+}
+i {
+    color: #b13b34;
+}
+div.content {
+    padding-bottom: 0.3em;
+}
+div.footer {
+    padding-top: 0;
+}
