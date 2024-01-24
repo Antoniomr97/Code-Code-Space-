@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/e5e04d48d3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Rubik&display=swap" rel="stylesheet">
+    <style>
+        section{
+            display: grid;
+            grid-gap: 0.9em;
+            grid-template-columns: repeat(4,15%);
+            grid-template-rows: 30% 30% 30%;
+            grid-auto-flow: column;
+            justify-content: center;
+            background-color: var(--dark);
+            height: 50vh;
+            padding: 1em;
+        }
+        .box{
+            background-color: var(--green);
+            color: #fff;
+            border-radius: 0.3rem;
+            padding: 1.2em;
+            font-size: 1.8rem;
+        }
+        .box:nth-child(even) {
+            background-color: var(--blue);
+            color: var(--dark);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </section>
+</body>
+</html>
